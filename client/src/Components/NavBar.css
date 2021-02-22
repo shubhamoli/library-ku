@@ -8,7 +8,7 @@
     font-size: 18px;
 }
 .link-formatting:active {
-    color: #ffc600;
+    color: #ffc600 !important;
 }
 
 .navlink-spacing {

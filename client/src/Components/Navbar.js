@@ -50,6 +50,7 @@ const NavBar = () => {
                 >
                     <span className="navbar-toggler-icon"></span>
                 </button>
+
                 <div
                     className="container-fluid navbar-alignment collapse navbar-collapse"
                     id="navbarNav"
@@ -60,6 +61,7 @@ const NavBar = () => {
                                 <li className="nav-item navlink-spacing">
                                     <Link
                                         className="nav-link link-formatting"
+                                        aria-current="page"
                                         to={tab.link}
                                     >
                                         {tab.display_name}
