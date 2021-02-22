@@ -1,0 +1,20 @@
+.NavBar {
+    margin-top: 1.5rem;
+}
+.navbar-alignment {
+    justify-content: center;
+}
+.link-formatting {
+    font-size: 18px;
+}
+.link-formatting:active {
+    color: #ffc600;
+}
+
+.navlink-spacing {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.color-white {
+    color: #fff !important;
+}
