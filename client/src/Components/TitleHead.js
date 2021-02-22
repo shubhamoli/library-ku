@@ -17,7 +17,7 @@ const TitleHead = () => {
                     </div>
                 </div>
 
-                <div className="col-lg-6 col-sm-12 col-xs-12">
+                <div className="col-lg-6 col-sm-10 col-xs-10">
                     <img
                         src={logo}
                         alt="Kumaun University"
