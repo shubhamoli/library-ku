@@ -25,7 +25,7 @@ router.get("/issuedbooks", (req, res) => {
 
     res.send(issuedBooks);
 });
-router.get("/faculties", (req, res) => {
+router.get("/facultieslibrary", (req, res) => {
     let faculties = facultyRepo.getFaculty();
     res.send(faculties);
 });
