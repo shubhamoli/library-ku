@@ -4,6 +4,7 @@ const router = express.Router();
 const UserRepository = require("../repositories/user");
 const BooksRepository = require("../repositories/books");
 const IssuedBooksRepository = require("../repositories/books_x_user");
+const facultyRepo = require("../repositories/faculty");
 
 router.get("/", (req, res) => {
     res.send("hello world");
@@ -21,8 +22,12 @@ router.get("/books", (req, res) => {
 });
 router.get("/issuedbooks", (req, res) => {
     let issuedBooks = IssuedBooksRepository.getIssuedBooks();
-    console.log(issuedBooks[0].issue_date);
+
     res.send(issuedBooks);
+});
+router.get("/faculties", (req, res) => {
+    let faculties = facultyRepo.getFaculty();
+    res.send(faculties);
 });
 
 module.exports = router;

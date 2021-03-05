@@ -56,6 +56,50 @@ const DB = {
             is_returned: 0,
         },
     ],
+    faculties: [
+        {
+            id: 1,
+            faculty_id: 1,
+            name: "Dr. Suchetan sah",
+            designation: "Assitance librarian",
+        },
+        {
+            id: 2,
+            faculty_id: 2,
+            name: "Mr. Akash Thagunna",
+            designation: "librarian",
+        },
+        {
+            id: 3,
+            faculty_id: 3,
+            name: "Ms. Gunjan Pandey",
+            designation: "Controller",
+        },
+        {
+            id: 4,
+            faculty_id: 4,
+            name: "Dr. vinayak",
+            designation: "Assitance librarian",
+        },
+        {
+            id: 5,
+            faculty_id: 5,
+            name: "Dr. Mudit sharma",
+            designation: "HOD",
+        },
+        {
+            id: 6,
+            faculty_id: 6,
+            name: "Mr. ajay pandey",
+            designation: "head librarian",
+        },
+        {
+            id: 7,
+            faculty_id: 7,
+            name: "mrs. aradhana mukharjee",
+            designation: "incharge of library",
+        },
+    ],
 };
 
 module.exports = DB;
