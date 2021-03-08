@@ -24,22 +24,7 @@ const TitleHead = () => {
                         className="header-height"
                     />
                 </div>
-                <div className="col-lg-3 col-visibility d-flex ">
-                    <form className="d-flex search-bar-alignment">
-                        <input
-                            className="form-control me-2"
-                            type="search"
-                            placeholder="Search"
-                            aria-label="Search"
-                        />
-                        <button
-                            className="btn btn-outline-success bg-success text-light"
-                            type="submit"
-                        >
-                            Search
-                        </button>
-                    </form>
-                </div>
+                <div className="col-lg-3 col-visibility d-flex "></div>
             </div>
         </div>
     );

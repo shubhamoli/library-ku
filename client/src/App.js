@@ -16,6 +16,7 @@ import IssueIBooks from "./Pages/IssueBooks";
 import IssueICard from "./Pages/IssueICard";
 import MessageFromTDesk from "./Pages/MessageFromDesk";
 import ReturnBooks from "./Pages/ReturnBooks";
+import Section from "./Pages/Section";
 import Services from "./Pages/Services";
 import StudentFeedback from "./Pages/Student_feedback";
 
@@ -70,6 +71,11 @@ class App extends React.Component {
                         exact
                         path="/message_from_desk/:name"
                         component={MessageFromTDesk}
+                    ></Route>
+                    <Route
+                        exact
+                        to="/library_section"
+                        component={Section}
                     ></Route>
                 </Switch>
                 <Footer />

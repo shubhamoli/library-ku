@@ -10,6 +10,10 @@ const tabs = [
         link: "/",
     },
     {
+        display_name: "Sections",
+        link: "/library_section",
+    },
+    {
         display_name: "Events",
         link: "/events",
     },
