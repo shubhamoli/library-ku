@@ -1,4 +1,6 @@
 .border-seperation {
     border-right: 1px solid grey;
     border-top: 4px solid grey;
+    box-shadow: 5px 10px 10px rgb(109, 108, 108);
 }
+

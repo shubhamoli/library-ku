@@ -14,31 +14,31 @@ const Carousal = () => {
             data-bs-ride="carousel"
         >
             <div className="carousel-inner ">
-                <div className="carousel-item active">
+                <div className="carousel-item active carousel-sizing">
                     <img
                         src={gbpantlib}
-                        className="carousel-sizing d-block w-100"
+                        className="img-sizing d-block w-100"
                         alt="..."
                     />
                 </div>
-                <div className="carousel-item">
+                <div className="carousel-item carousel-sizing">
                     <img
                         src={libaray}
-                        className="carousel-sizing d-block w-100"
+                        className="img-sizing d-block w-100"
                         alt="..."
                     />
                 </div>
-                <div className="carousel-item">
+                <div className="carousel-item carousel-sizing">
                     <img
                         src={libarayinside}
-                        className="carousel-sizing d-block w-100"
+                        className="img-sizing d-block w-100"
                         alt="..."
                     />
                 </div>
-                <div className="carousel-item">
+                <div className="carousel-item carousel-sizing">
                     <img
                         src={lib}
-                        className="carousel-sizing d-block w-100"
+                        className="img-sizing d-block w-100"
                         alt="..."
                     />
                 </div>

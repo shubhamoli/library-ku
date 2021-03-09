@@ -64,7 +64,7 @@ const NavBar = () => {
                             return (
                                 <li className="nav-item navlink-spacing">
                                     <Link
-                                        className="nav-link link-formatting"
+                                        className="link-formatting"
                                         aria-current="page"
                                         to={tab.link}
                                     >

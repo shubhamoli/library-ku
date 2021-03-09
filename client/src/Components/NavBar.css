@@ -6,15 +6,13 @@
 }
 .link-formatting {
     font-size: 18px;
+    color: rgb(156, 154, 154);
+    text-decoration: none;
 }
-.link-formatting:active {
-    color: #ffc600 !important;
+.link-formatting:hover {
+    color: #ffc600;
 }
 
 .navlink-spacing {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-.color-white {
-    color: #fff !important;
+    padding: 5px 28px;
 }
