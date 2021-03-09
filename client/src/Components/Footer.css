@@ -31,6 +31,13 @@ i {
     margin-bottom: 16px;
     resize: vertical;
 }
+.div-welcome-button {
+    background-color: #ffc600;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+}
 .submit-button {
     background-color: #ffc600;
     color: black;
@@ -39,6 +46,7 @@ i {
     border-radius: 4px;
     cursor: pointer;
 }
-.submit-button:hover {
+.submit-button:hover,
+.div-welcome-button:hover {
     background-color: #f1f13e;
 }

@@ -20,47 +20,41 @@ class Form extends React.Component {
 
     render() {
         return (
-            <div className="container-fluid border-lining">
-                <h4>Get in touch with us.</h4>
+            <div className="container-fluid bg-dark text-light border-lining auth-form-container-styling">
+                <h3>Get in touch with us.</h3>
+                <span className="under-line-card mt-3"></span>
                 <form className="mt-4" action="/">
-                    <p className="d-flex justify-content-center form-styling">
-                        Full Name
-                        <input
-                            type="text"
-                            className=""
-                            placeholder="Enter you name..."
-                            name="FullName"
-                        ></input>
-                    </p>
+                    <input
+                        type="text"
+                        className="auth-form-styling"
+                        placeholder="Your Name..."
+                        name="FullName"
+                    ></input>
 
-                    <p className="d-flex justify-content-center form-styling">
-                        Subject
-                        <input
-                            type="text"
-                            placeholder="Subject...."
-                            name="subject"
-                        ></input>
-                    </p>
-                    <p className="d-flex justify-content-center form-styling">
-                        E-Mail
-                        <input
-                            type="text"
-                            placeholder="Enter you E-Mail Address..."
-                            name="e_Mail"
-                        ></input>
-                    </p>
-                    <p className="d-flex justify-content-center form-styling">
-                        Message
-                        <textarea
-                            name="description"
-                            placeholder="your message"
-                        ></textarea>
-                    </p>
+                    <input
+                        type="text"
+                        className="auth-form-styling"
+                        placeholder="Subject..."
+                        name="subject"
+                    ></input>
+
+                    <input
+                        type="text"
+                        className="auth-form-styling"
+                        placeholder="E-Mail Address..."
+                        name="e_Mail"
+                    ></input>
+
+                    <textarea
+                        name="description"
+                        className="auth-form-styling"
+                        placeholder="Your Message..."
+                    ></textarea>
 
                     <button
                         type="submit"
                         onClick={this.getStudentData()}
-                        className="btn btn-dark text-light"
+                        className="btn btn-dark text-light submit-button"
                     >
                         Submit
                     </button>

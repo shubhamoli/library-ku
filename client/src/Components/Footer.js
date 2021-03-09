@@ -24,7 +24,7 @@ const Footer = () => {
                             us with the suggestions so that we too can improve
                             and serve you the best
                         </p>
-                        <input type="submit" value="We Welcome You"></input>
+                        <div className="div-welcome-button">We Welcome You</div>
                     </div>
 
                     <div className="col-lg-4 border-lining-right col-md-6 mb-4 mb-md-0">
@@ -50,7 +50,11 @@ const Footer = () => {
                             name="subject"
                             placeholder="Help & Queries..."
                         ></textarea>
-                        <input type="submit" className="submit-button" value="Submit"></input>
+                        <input
+                            type="submit"
+                            className="submit-button"
+                            value="Submit"
+                        ></input>
                     </div>
 
                     <div className="col-lg-4 col-md-6 mb-4 mb-md-0">
