@@ -11,7 +11,6 @@ const InstituteDetails = () => {
                     </div>
                     <div className="mx-4">
                         <h4>Books</h4>
-
                         <span>100000+</span>
                     </div>
                 </div>

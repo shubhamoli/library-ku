@@ -31,24 +31,26 @@ const Footer = () => {
                         <h5 className="footer-text-styling">Help & Queries</h5>
                         <span className="under-line-card mt-3"></span>
                         <input
-                            className="mt-3"
+                            className="mt-3 text-input-area"
                             type="text"
                             id="name"
                             name="studentname"
                             placeholder="Your name..."
                         ></input>
                         <input
+                            className="text-input-area"
                             type="text"
                             id="email"
                             name="studentemail"
                             placeholder="Your e-mail..."
                         ></input>
                         <textarea
+                            className="text-input-area"
                             id="subject"
                             name="subject"
                             placeholder="Help & Queries..."
                         ></textarea>
-                        <input type="submit" value="Submit"></input>
+                        <input type="submit" className="submit-button" value="Submit"></input>
                     </div>
 
                     <div className="col-lg-4 col-md-6 mb-4 mb-md-0">
