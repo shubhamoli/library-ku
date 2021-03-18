@@ -1,7 +1,6 @@
-.border-lining {
-    border: 2px solid black;
+.form-alignment {
+    margin-top: 40px;
 }
-
 .form-styling {
     font-size: larger;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -14,14 +13,13 @@
     box-shadow: 10px 10px 30px 5px grey;
 }
 .auth-form-container-styling:hover {
-    transform: scale(1.02);
+    transform: scale(1);
     transition-duration: 0.5s;
     box-shadow: 10px 10px 30px 5px black;
 }
 
 .auth-form-styling {
     width: 90%;
-    margin-top: 5px;
     padding: 20px 15px;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -30,6 +28,7 @@
     margin-bottom: 16px;
 }
 .submit-button {
+    width: 40%;
     margin-top: 10px;
     margin-bottom: 10px;
     background-color: #ffc600;

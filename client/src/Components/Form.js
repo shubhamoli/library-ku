@@ -14,16 +14,16 @@ class Form extends React.Component {
         };
     }
     getStudentData = async () => {
-        const student_data = await Axios.get("http://localhost:5000/users");
-        console.log(student_data.data[0].name);
+        //const student_data = await Axios.get("http://localhost:5000/users");
+        //console.log(student_data.data[0].name);
     };
 
     render() {
         return (
-            <div className="container-fluid bg-dark text-light border-lining auth-form-container-styling">
+            <div className="container bg-dark text-light auth-form-container-styling">
                 <h3>Get in touch with us.</h3>
                 <span className="under-line-card mt-3"></span>
-                <form className="mt-4" action="/">
+                <form className="form-alignment" action="/">
                     <input
                         type="text"
                         className="auth-form-styling"

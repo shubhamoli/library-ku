@@ -2,12 +2,14 @@
 
 import React from "react";
 import { Switch, Route } from "react-router-dom";
+
 import "./App.css";
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import NavBar from "./Components/Navbar";
 import About from "./Pages/About";
 import ContactUs from "./Pages/ContactUs";
+import CreateStudent from "./Pages/CreateStudent";
 import ENewsLetter from "./Pages/ENewsLetter";
 import Events from "./Pages/Events";
 import Faculties from "./Pages/Faculties";
@@ -31,6 +33,11 @@ class App extends React.Component {
                     <Route exact path="/" component={Home}></Route>
                     <Route exact path="/events" component={Events}></Route>
                     <Route exact path="/services" component={Services}></Route>
+                    <Route
+                        exact
+                        path="/createStudent"
+                        component={CreateStudent}
+                    ></Route>
                     <Route
                         exact
                         path="/faculties"
@@ -77,6 +84,11 @@ class App extends React.Component {
                         to="/library_section"
                         component={Section}
                     ></Route>
+                    <Route
+                        exact
+                        path="/create_student"
+                        component={CreateStudent}
+                    />
                 </Switch>
                 <Footer />
             </div>

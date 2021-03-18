@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./NoticeBoard.css";
-import "./StudentHelp.css";
 
 const notice = [
     {
@@ -62,9 +61,7 @@ const NoticeBoard = () => {
                                             to={content}
                                             className="link-decor"
                                         >
-                                            <p className="content-alignment">
-                                                {content}
-                                            </p>
+                                            <p className="">{content}</p>
                                         </Link>
                                     );
                                 })}

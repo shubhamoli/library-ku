@@ -1,12 +1,12 @@
-const express = require("express");
-const router = express.Router();
+const route = require("express").Router();
+const studentController = require("../controllers/studentController");
 
-const UserRepository = require("../repositories/user");
-const BooksRepository = require("../repositories/books");
-const IssuedBooksRepository = require("../repositories/books_x_user");
-const facultyRepo = require("../repositories/faculty");
+route.post("/students", (req, res) => {
+    console.log(req.data);
+    studentController.CreateStudent(req);
+});
 
-router.get("/", (req, res) => {
+/*router.get("/", (req, res) => {
     res.send("hello world");
 });
 
@@ -28,6 +28,6 @@ router.get("/issuedbooks", (req, res) => {
 router.get("/facultieslibrary", (req, res) => {
     let faculties = facultyRepo.getFaculty();
     res.send(faculties);
-});
+});*/
 
-module.exports = router;
+module.exports = route;

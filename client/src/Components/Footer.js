@@ -2,11 +2,9 @@ import React from "react";
 import "./Footer.css";
 import "./AuthenticationForm.css";
 
-const Links = ["link1", "link2", "link3", "link4"];
-
 const Footer = () => {
     return (
-        <footer className="bg-dark text-center text-light mt-5 pt-3 pb-3">
+        <footer className="bg-dark text-center text-light box-adjustment pt-3 pb-3">
             <div className="container p-4 pt-5">
                 <div className="row">
                     <div className="col-lg-4 border-lining-right col-md-8 mb-4 mb-md-0">

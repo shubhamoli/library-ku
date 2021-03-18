@@ -1,6 +1,5 @@
 .box-adjustment {
-    border: 2px solid black;
-    margin-top: 100px;
+    margin-top: 10rem;
 }
 
 .highlights-styling {
@@ -10,7 +9,7 @@
     box-shadow: 10px 10px 30px 5px grey;
 }
 .highlights-styling:hover {
-    transform: scale(1.02);
+    transform: scale(1);
     transition-duration: 0.5s;
     box-shadow: 10px 10px 30px 5px black;
 }
