@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1161723e.chunk.css",
+    "main.js": "/static/js/main.f899b9bd.chunk.js",
+    "main.js.map": "/static/js/main.f899b9bd.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c012fedc.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c012fedc.js.map",
+    "static/js/2.c6df62be.chunk.js": "/static/js/2.c6df62be.chunk.js",
+    "static/js/2.c6df62be.chunk.js.map": "/static/js/2.c6df62be.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.1161723e.chunk.css.map": "/static/css/main.1161723e.chunk.css.map",
+    "static/js/2.c6df62be.chunk.js.LICENSE.txt": "/static/js/2.c6df62be.chunk.js.LICENSE.txt",
+    "static/media/drneeta.5f9737c7.jpg": "/static/media/drneeta.5f9737c7.jpg",
+    "static/media/drsuchetan.e3e8e162.jpg": "/static/media/drsuchetan.e3e8e162.jpg",
+    "static/media/gbpantlib.0368141c.png": "/static/media/gbpantlib.0368141c.png",
+    "static/media/lib.b12326f2.jpeg": "/static/media/lib.b12326f2.jpeg",
+    "static/media/library.0f776382.jpeg": "/static/media/library.0f776382.jpeg",
+    "static/media/libraryinside.357c9932.jpeg": "/static/media/libraryinside.357c9932.jpeg",
+    "static/media/logoku.e26c5b36.png": "/static/media/logoku.e26c5b36.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c012fedc.js",
+    "static/js/2.c6df62be.chunk.js",
+    "static/css/main.1161723e.chunk.css",
+    "static/js/main.f899b9bd.chunk.js"
+  ]
+}
