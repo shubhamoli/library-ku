@@ -1,7 +1,8 @@
 const route = require("express").Router();
 const studentController = require("../controllers/studentController");
 
-route.post("/students", (req, res) => {
+
+route.post("/create", (req, res) => {
     console.log(req.data);
     studentController.CreateStudent(req);
 });

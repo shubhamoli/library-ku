@@ -9,6 +9,7 @@ import Header from "./Components/Header";
 import NavBar from "./Components/Navbar";
 import About from "./Pages/About";
 import ContactUs from "./Pages/ContactUs";
+import CreateBooks from "./Pages/CreateBook";
 import CreateStudent from "./Pages/CreateStudent";
 import ENewsLetter from "./Pages/ENewsLetter";
 import Events from "./Pages/Events";
@@ -35,7 +36,7 @@ class App extends React.Component {
                     <Route exact path="/services" component={Services}></Route>
                     <Route
                         exact
-                        path="/createStudent"
+                        path="/students/create"
                         component={CreateStudent}
                     ></Route>
                     <Route
@@ -81,14 +82,15 @@ class App extends React.Component {
                     ></Route>
                     <Route
                         exact
-                        to="/library_section"
+                        path="/library_section"
                         component={Section}
                     ></Route>
+
                     <Route
                         exact
-                        path="/create_student"
-                        component={CreateStudent}
-                    />
+                        path="/books/create"
+                        component={CreateBooks}
+                    ></Route>
                 </Switch>
                 <Footer />
             </div>

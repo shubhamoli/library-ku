@@ -11,7 +11,7 @@ const CreateStudent = () => {
     const [sem, setSem] = useState();
 
     const postData = () => {
-        Axios.post("http://localhost:5000/students", {
+        Axios.post("http://localhost:5000/students/create", {
             rollno: rollno,
             stname: stname,
             dob: dob,
