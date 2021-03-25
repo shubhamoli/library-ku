@@ -20,5 +20,20 @@ const Create = (data) => {
         }
     );
 };
-
-module.exports = { Create };
+const Get = (rollno, result) => {
+    db.query(
+        `select * from Students where rollnumber=${rollno}`,
+        (err, resp) => {
+            if (err) {
+                result(err, null);
+            } else {
+                const data = JSON.parse(JSON.stringify(resp));
+                result(null, data);
+            }
+        }
+    );
+};
+module.exports = {
+    Create,
+    Get,
+};

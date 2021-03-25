@@ -4,10 +4,17 @@ const CreateBook = (req) => {
     const data = req.body;
     booksModel.Create(data);
 };
-const GetBooks = () => {
-    console.log("in get controller.");
+const GetBooksByRedirection = (course, semester, res) => {
+    console.log(course, semester);
+    booksModel.GetRedirectedBooks(course, semester, function (error, result) {
+        if (error) {
+            console.log(error);
+        } else {
+            res.send(result);
+        }
+    });
 };
 module.exports = {
     CreateBook,
-    GetBooks,
+    GetBooksByRedirection,
 };

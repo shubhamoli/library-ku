@@ -22,4 +22,26 @@ const Create = (data) => {
     );
 };
 
-module.exports = { Create };
+const GetRedirectedBooks = (course, semester, result) => {
+    let crs = "";
+    crs = course;
+    console.log("in get route", course, semester);
+    db.query(
+        `select * from Books where course=? and semester=?`,
+        [course, semester],
+        (err, resp) => {
+            if (err) {
+                result(err, null);
+            } else {
+                const data = JSON.parse(JSON.stringify(resp));
+                console.log(data);
+                result(null, data);
+            }
+        }
+    );
+};
+
+module.exports = {
+    Create,
+    GetRedirectedBooks,
+};
