@@ -1,29 +1,43 @@
-const student_model = require("../models/students_model");
+const studentModel = require("../models/students_model");
 const booksController = require("./booksController");
 
-const CreateStudent = (req) => {
-    const data = req.body;
+const isValid = (data) => {
+    // returning true here for now
+    // but you should add your required checks here
+    return true;
+}
 
-    student_model.Create(data);
+const Create = (data) => {
+    if (!data) {
+        return;
+    }
+
+    if (isValid(data)) {
+        // return data with "id" key attached
+        // model should auto. attach that
+        return studentModel.Create(data);
+    }
+
 };
-const GetStudent = (rollno, res) => {
-    console.log("in get controller.", rollno);
-    student_model.Get(rollno, function (err, result) {
+
+const GetByRollNo = (rollno) => {
+    if (!rollno) {
+        return false;
+    }
+
+    studentModel.GetByRollNo(rollno, function (err, student) {
         if (err) {
-            console.log(err);
+            return false;
         } else {
-            if (result.length === 0) {
-                console.log("user don't exists");
-            } else {
-                console.log("user exists.");
-                const semester = result[0].semester;
-                const course = result[0].course;
-                booksController.GetBooksByRedirection(course, semester, res);
+            if (student.length === 0) {
+                return false;
             }
+            return student;
         }
     });
 };
+
 module.exports = {
-    CreateStudent,
-    GetStudent,
+    Create,
+    GetByRollNo,
 };

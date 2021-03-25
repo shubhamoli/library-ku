@@ -22,10 +22,9 @@ const Create = (data) => {
     );
 };
 
-const GetRedirectedBooks = (course, semester, result) => {
+const GetBooksByCourseSemester = (course, semester, result) => {
     let crs = "";
     crs = course;
-    console.log("in get route", course, semester);
     db.query(
         `select * from Books where course=? and semester=?`,
         [course, semester],
@@ -43,5 +42,5 @@ const GetRedirectedBooks = (course, semester, result) => {
 
 module.exports = {
     Create,
-    GetRedirectedBooks,
+    GetBooksByCourseSemester,
 };

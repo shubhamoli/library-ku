@@ -1,20 +1,34 @@
 const booksModel = require("../models/books_model");
 
-const CreateBook = (req) => {
-    const data = req.body;
-    booksModel.Create(data);
+const isValid = (data) => {
+    // returning true here for now
+    // but you should add your required checks here
+    return true;
+}
+
+const Create = (data) => {
+    if (!data) {
+        return;
+    }
+
+    if (isValid(data)) {
+        // return data with "id" key attached
+        // model should auto. attach that
+        return booksModel.Create(data);
+    }
 };
-const GetBooksByRedirection = (course, semester, res) => {
-    console.log(course, semester);
-    booksModel.GetRedirectedBooks(course, semester, function (error, result) {
+
+const GetBooksByCourseSemester = (course, semester) => {
+    booksModel.GetBooksByCourseSemester(course, semester, function (error, books) {
         if (error) {
-            console.log(error);
+            return false;
         } else {
-            res.send(result);
+            return books;
         }
     });
 };
+
 module.exports = {
-    CreateBook,
-    GetBooksByRedirection,
+    Create,
+    GetBooksByCourseSemester,
 };

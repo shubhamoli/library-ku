@@ -20,7 +20,8 @@ const Create = (data) => {
         }
     );
 };
-const Get = (rollno, result) => {
+
+const GetByRollNo = (rollno, result) => {
     db.query(
         `select * from Students where rollnumber=${rollno}`,
         (err, resp) => {
@@ -33,6 +34,7 @@ const Get = (rollno, result) => {
         }
     );
 };
+
 module.exports = {
     Create,
     Get,
